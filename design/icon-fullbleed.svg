@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<defs>
+  <linearGradient id="bg" x1="140" y1="60" x2="900" y2="980" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#26335a"/><stop offset=".55" stop-color="#141b2d"/><stop offset="1" stop-color="#0a0e16"/></linearGradient>
+  <radialGradient id="halo" cx="660" cy="250" r="620" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#82aaff" stop-opacity=".42"/><stop offset=".6" stop-color="#82aaff" stop-opacity=".06"/><stop offset="1" stop-color="#82aaff" stop-opacity="0"/></radialGradient>
+  <linearGradient id="slash" x1="430" y1="800" x2="650" y2="240" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6f8cff"/><stop offset=".5" stop-color="#8fb4ff"/><stop offset="1" stop-color="#c7a8ff"/></linearGradient>
+  <linearGradient id="ring" x1="200" y1="820" x2="820" y2="240" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4b66d8" stop-opacity=".25"/><stop offset=".5" stop-color="#82aaff"/><stop offset="1" stop-color="#d1b6ff"/></linearGradient>
+  <linearGradient id="spark" x1="650" y1="214" x2="854" y2="418" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffd9a0"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity=".5"/></filter>
+  <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs><rect width="1024" height="1024" rx="0" fill="url(#bg)"/><rect width="1024" height="1024" rx="0" fill="url(#halo)"/>
+<g transform="translate(51.19999999999999 51.19999999999999) scale(0.9)">
+  <!-- anneau "objectif" : rappelle le format Rond / la photo -->
+  <circle cx="512" cy="530" r="318" fill="none" stroke="url(#ring)" stroke-width="26" opacity=".95"/>
+  <circle cx="512" cy="530" r="262" fill="none" stroke="#9db8ff" stroke-opacity=".14" stroke-width="6"/>
+  <!-- marques de cadrage (outil de création) -->
+  <g stroke="#9db8ff" stroke-opacity=".5" stroke-width="14" stroke-linecap="round" fill="none">
+    <path d="M205 330 V262 Q205 232 235 232 H300"/>
+    <path d="M819 730 V798 Q819 828 789 828 H724"/>
+  </g>
+  <!-- le SLASH -->
+  <g filter="url(#shadow)" transform="translate(535 0) scale(1.38 1) translate(-535 0)">
+    <path d="M404 782 L566 270 Q576 238 610 238 H650 Q676 238 668 264 L506 776 Q497 806 463 806 H422 Q394 806 404 782 Z" fill="url(#slash)"/>
+    <path d="M566 270 Q576 238 610 238 H650 Q676 238 668 264 L660 290 Q640 262 612 262 Q584 262 574 292 Z" fill="#fff" fill-opacity=".38"/>
+  </g>
+  <!-- étincelle IA -->
+  <g filter="url(#glow)">
+    <path d="M752 214 C760 288 780 308 854 316 C780 324 760 344 752 418 C744 344 724 324 650 316 C724 308 744 288 752 214 Z" fill="url(#spark)"/>
+  </g>
+  <path d="M286 560 C289 590 297 598 327 601 C297 604 289 612 286 642 C283 612 275 604 245 601 C275 598 283 590 286 560 Z" fill="#cfe0ff" fill-opacity=".9"/>
+  <circle cx="842" cy="500" r="11" fill="#b7a2ff"/><circle cx="196" cy="760" r="9" fill="#82aaff"/>
+</g></svg>

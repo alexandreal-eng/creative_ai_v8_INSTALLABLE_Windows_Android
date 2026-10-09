@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<defs>
+  <linearGradient id="bg" x1="140" y1="60" x2="900" y2="980" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#26335a"/><stop offset=".55" stop-color="#141b2d"/><stop offset="1" stop-color="#0a0e16"/></linearGradient>
+  <radialGradient id="halo" cx="660" cy="250" r="620" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#82aaff" stop-opacity=".42"/><stop offset=".6" stop-color="#82aaff" stop-opacity=".06"/><stop offset="1" stop-color="#82aaff" stop-opacity="0"/></radialGradient>
+  <linearGradient id="slash" x1="430" y1="800" x2="650" y2="240" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6f8cff"/><stop offset=".5" stop-color="#8fb4ff"/><stop offset="1" stop-color="#c7a8ff"/></linearGradient>
+  <linearGradient id="ring" x1="200" y1="820" x2="820" y2="240" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4b66d8" stop-opacity=".25"/><stop offset=".5" stop-color="#82aaff"/><stop offset="1" stop-color="#d1b6ff"/></linearGradient>
+  <linearGradient id="spark" x1="650" y1="214" x2="854" y2="418" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffd9a0"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity=".5"/></filter>
+  <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs><rect width="1024" height="1024" rx="0" fill="url(#bg)"/><rect width="1024" height="1024" rx="0" fill="url(#halo)"/></svg>

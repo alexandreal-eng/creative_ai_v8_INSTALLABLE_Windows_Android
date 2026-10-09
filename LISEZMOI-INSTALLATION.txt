@@ -1,0 +1,63 @@
+CREATIVE AI v8.0 — INSTALLATION SUR ORDINATEUR ET ANDROID
+==========================================================
+
+L'application est la même partout : elle fonctionne 100 % hors ligne, avec ta bibliothèque
+de slash, tes slash personnels, ton historique et ton format d'image.
+
+Icône : un slash lumineux dans un anneau d'objectif, avec une étincelle IA (création + slash).
+Les sources de l'icône sont dans le dossier "design", les icônes générées dans "build",
+"public/icons" et "assets".
+
+
+A. WINDOWS — créer l'installateur sur ton PC (le plus simple)
+--------------------------------------------------------------
+1. Installe Node.js (version LTS) : https://nodejs.org
+2. Décompresse ce dossier, puis double-clique sur  1-CREER-INSTALLATEUR-WINDOWS.bat
+   (Internet est nécessaire cette fois-là pour télécharger les outils ; compte quelques minutes.)
+3. Le dossier "dist" s'ouvre. Double-clique sur  Creative-AI-Setup-8.0.0.exe  et installe.
+   -> un RACCOURCI est créé sur le Bureau et dans le menu Démarrer ("Creative AI"),
+      avec l'icône de l'application.
+   -> "Creative-AI-Portable-8.0.0.exe" est aussi créé : une version sans installation.
+Pour seulement essayer sans installer : 0-TESTER-SANS-INSTALLER.bat
+
+Mac / Linux : "npm install" puis "npm run dist:mac" ou "npm run dist:linux".
+(Mac : l'application n'est pas signée ; au premier lancement, clic droit > Ouvrir.)
+
+
+B. SANS RIEN INSTALLER SUR TON PC — compilation automatique en ligne (Windows + Android)
+-----------------------------------------------------------------------------------------
+1. Crée un compte gratuit sur https://github.com et un nouveau dépôt (privé si tu veux).
+2. Envoie-y tout le contenu de ce dossier (bouton "Add file > Upload files").
+   (Le dossier caché ".github" doit être envoyé aussi : il contient la recette de compilation.)
+3. Onglet "Actions" > "Creative AI - Compilation" > "Run workflow".
+4. Après quelques minutes, télécharge les résultats en bas de la page de l'exécution :
+   Creative-AI-Windows (installateur .exe), Creative-AI-Android (.apk), Linux, Mac.
+
+
+C. ANDROID — installer l'application sur le téléphone
+------------------------------------------------------
+Option 1 (APK) : récupère  Creative-AI-Android.apk  (méthode B, ou méthode 2-CREER-APK-ANDROID.bat
+  si Android Studio + JDK 17 sont installés), copie-le sur le téléphone, ouvre-le et autorise
+  "l'installation depuis cette source" quand Android le demande. L'icône apparaît sur l'écran d'accueil.
+  (L'APK est signé en mode "debug" : parfait pour un usage personnel ; pour le Play Store, il faudra
+  une signature de publication.)
+
+Option 2 (sans APK, application web installable) : si tu héberges le dossier "public" sur un site
+  HTTPS (par exemple GitHub Pages), ouvre l'adresse dans Chrome Android > menu ⋮ > "Installer
+  l'application". Elle s'installe avec l'icône, s'ouvre en plein écran et marche hors ligne.
+  Le même principe fonctionne sur ordinateur (Chrome / Edge > "Installer").
+
+
+D. ACCÈS AUX FICHIERS ET AUTORISATIONS
+----------------------------------------
+- Ordinateur : sauvegardes et exports passent par la fenêtre native "Enregistrer sous" / "Ouvrir" :
+  tu choisis toi-même le dossier, l'application n'accède à AUCUN autre fichier. Seule l'autorisation
+  du presse-papiers (copier les slash) est accordée.
+- Android : la sauvegarde s'envoie via le menu de partage d'Android (Enregistrer dans Drive / Fichiers,
+  WhatsApp, e-mail...). Aucune permission de stockage n'est demandée. Pour restaurer, l'application
+  ouvre le sélecteur de fichiers d'Android.
+- Les images de référence sont choisies avec le sélecteur de fichiers du système.
+- Aucune donnée n'est envoyée sur Internet. Le seul lien externe est le bouton "Ouvrir ChatGPT".
+
+Tes données (slash personnels, historique) restent sur l'appareil. Pense à faire une sauvegarde
+(Paramètres > Sauvegarder mes données) avant de désinstaller ou de changer de téléphone.

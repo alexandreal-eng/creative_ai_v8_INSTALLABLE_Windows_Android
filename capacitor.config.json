@@ -1,0 +1,7 @@
+{
+  "appId": "com.creativeai.offline",
+  "appName": "Creative AI",
+  "webDir": "public",
+  "backgroundColor": "#12161c",
+  "android": { "allowMixedContent": false }
+}
